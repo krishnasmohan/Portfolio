@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/contact.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h3>Portfolio</h3>
+        </div>
+        <div class="list-container">
+            <ul class="menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skill" class="nav-link">Skills</a></li>
+                <li><a href="#project" class="nav-link">Projects</a></li>
+            </ul>
+            <div class="header-bars">
+                <i class="fa-solid fa-bars" onclick="listResponsive()"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main-body-container section" id="home">
+            <div class="body-container">
+                <div class="main-content">
+                    <h3>Hi, Myself</h3>
+                    <h2>Krishna Mohan</h2>
+                    <h3>I am a <span class="frontend">Frontend Developer</span>.</h3>
+                    <p>-dedicated and innovative frontend developer specialized in creating dynamic and responsive web interfaces.</p>
+                    <div class="cv-contact-container">
+                        <a href="./images/FAANGPath_Simple_Template__3_ (1).pdf" download="FAANGPath_Simple_Template__3_ (1).pdf" class="cv-link">
+                            <button class="cv-button">
+                                Download CV
+                            </button>
+                        </a>
+                        
+                        <button class="contact-button" onclick="contactScroll()">
+                            Contact Me
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="main-img">
+                    <div class="img-container">
+                        <div class="user-img">
+                            <img class="user" src="./images/photo.jpg" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="app-logo">
+                        <div class="app-icon-container">
+                            <a href="https://www.linkedin.com/in/krishna-mohan-s" class="app-icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/krishnasmohan" class="app-icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/krishh_nahh._?utm_source=qr&igsh=dWRwZ25wbndjZ216" class="app-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="about-me section" id="about">
+            <div class="about-container">
+                <div class="about-main">
+                    <h1>About Me</h1>
+                    <div class="aboutme-content">
+                        <p>Hello, I am <span class="about-highlights">Krishna Mohan S</span>, a passionate Frontend developer. 
+                            My journey in web development is driven by a love for designs and I always loved to paint and draw pictures.<br />
+                            I am based in <span class="about-highlights">Trivandrum</span>. I recently graduated with a degree in 
+                            <span class="about-highlights">Civil Engineering</span> from Kerala Technical University. 
+                            I enjoy designing and developing new websites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills-outer section" id="skill">
+            <div class="skills-container">
+                <div class="about-skill">
+                    <h1>My Skills</h1>
+                    <div class="skills-content">
+                        <div class="skills">
+                            <div class="skill-logo">
+                                <i class="fa-brands fa-html5"></i>
+                                <span class="tech">HTML</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-line">
+                                    <span class="line html-span"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="skill-logo">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <span class="tech">CSS</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-line">
+                                    <span class="line css-span"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="skill-logo">
+                                <i class="fa-brands fa-js"></i>
+                                <span class="tech">JAVASCRIPT</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-line">
+                                    <span class="line js-span"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="skill-logo">
+                                <i class="fa-brands fa-react"></i>
+                                <span class="tech">REACT</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-line">
+                                    <span class="line react-span"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="skill-logo">
+                                <i class="fa-brands fa-git"></i>
+                                <span class="tech">REDUX</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-line">
+                                    <span class="line redux-span"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="skill-logo">
+                                <i class="fa-brands fa-git"></i>
+                                <span class="tech">GIT</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-line">
+                                    <span class="line git-span"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="skill-logo">
+                                <i class="fa-solid fa-t"></i>
+                                <span class="tech">BOOTSTRAP</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-line">
+                                    <span class="line boostrap-span"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="skill-logo">
+                                <i class="fa-solid fa-t"></i>
+                                <span class="tech">JAVA</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-line">
+                                    <span class="line java-span"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects-main-container section" id="project">
+            <h1 class="projects-heading">PROJECTS</h1>
+            
+            <div class="project-flex-container">
+                <div class="projects-container">
+                    <div class="projects">
+                        <div class="project-card">
+                            <div class="project-img-container">
+                                <img src="./images/shop.png" alt="loading...">
+                            </div>
+                            <div class="project-content-container">
+                                <div class="project-content">
+                                    <div class="project-title">
+                                        <h2>E-commerce website using React-Redux</h2>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>This project is a fully functional E-commerce website built using React and Redux, 
+                                            with a responsive design and styling done with Bootstrap
+                                        </p>
+                                        <br />
+                                        <p>
+                                            
+                                            &rarr;Add to Cart <br>
+                                            &rarr;Cart Management <br>
+                                            &rarr;Amount Calculation <br>
+                                            &rarr;Categoried product pages
+                                        </p>
+                                        <div class="project-link">
+                                            <a href="https://github.com/krishnasmohan/react-redux.git"><button class="view-code"> <i class="fa-brands fa-github"></i>  View Code</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <div class="project-card">
+                            <div class="project-img-container">
+                                <img src="./images/dashboard.png" alt="Loading...">
+                            </div>
+                            <div class="project-content-container">
+                                <div class="project-content">
+                                    <div class="project-title">
+                                        <h2>Admin-Dashboard using React</h2>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>&rarr;Admin Dashboard build using React, Material UI, Nivo Charts, Formik, Yup, 
+                                            FullCalendar, and Data Grid. 
+                                        </p>
+                                        <br>
+                                        <p>
+                                            &rarr;Light and Dark Mode<br/>
+                                            &rarr;4 different Charts<br />
+                                            &rarr;3 different Data Table Pages<br />
+                                            &rarr;FAQ Page, Form Page, and Calendar Integration.
+                                        </p>
+                                        <div class="project-link">
+                                            <a href="https://github.com/krishnasmohan/Admin-dashboard.git"><button class="view-code"> <i class="fa-brands fa-github"></i>  View Code</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-flex-container">
+                <div class="projects-container">
+                    <div class="projects">
+                        <div class="project-card">
+                            <div class="project-img-container">
+                                <img src="./images/disney.jpg" alt="">
+                            </div>
+                            <div class="project-content-container">
+                                <div class="project-content">
+                                    <div class="project-title">
+                                        <h2>Disney + Hotstar Clone</h2>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>&rarr;Develped a Disney+Hotstar interface clone using HTML, CSS, and Javascript
+                                        </p>
+                                        <p>&rarr;I contributed to the project by implementing and enhancing the styling 
+                                            using modern CSS techniques to enhance the visual appeal and user experience</p>
+                                        <div class="project-link">
+                                            <a href="https://github.com/krishnasmohan/disnayHotstar.git"><button class="view-code"> <i class="fa-brands fa-github"></i>  View Code</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <div class="project-card">
+                            <div class="project-img-container">
+                                <img src="./images/codepen.jpg" alt="">
+                            </div>
+                            <div class="project-content-container">
+                                <div class="project-content">
+                                    <div class="project-title">
+                                        <h2>Codepen using React</h2>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>&rarr;Developed a CodePen-like website using React, featuring 
+                                            a real-time code editor and live preview functionality, enabling 
+                                            users to write and edit code.
+                                        </p>
+                                        
+                                        <div class="project-link">
+                                            <a href="https://github.com/krishnasmohan/Codepen.git"><button class="view-code"> <i class="fa-brands fa-github"></i>  View Code</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </section>
+        <div class="contact-me-container">
+            <div class="contact-main">
+                <h1>Contact Me</h1>
+                <div class="contact-box">
+                    <div class="email-numb-container">
+                        <div class="contact-email">
+                            <p>krishnasmohan16@gmail.com</p>
+                        </div>
+                        <div class="contact-numb">
+                            <p>+91 9207197927</p>
+                        </div>
+                    </div>
+                    <div class="location-cont">
+                        <p><i class="fa-solid fa-location-dot"></i>   Nedumangad, Trivandrum, Kerala</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

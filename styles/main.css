@@ -1,0 +1,211 @@
+:root{
+    --text-color:#fff;
+    --bg-color:#191f36;
+    --main-color:#238dde;
+}
+
+.main-body-container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body-container{
+    width: 70%;
+    height: 55%;
+    display: flex;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+}
+.main-content{
+    flex: 1;
+    height: 100%;
+    transition: 0.3s;
+    
+}
+.main-img{
+    width: 40%;
+    height: 100%;
+    transition: 0.3s;
+}
+.main-content h3{
+    font-size: 20px;
+    padding: 15px 0;
+    font-weight: 600;
+}
+.main-content h2{
+    font-size: 36px;
+    padding: 15px 0;
+}
+.frontend{
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+.main-content p{
+    padding: 10px 0;
+    line-height: 25px;
+}
+.cv-contact-container{
+    display: flex;
+    gap: 10px;
+}
+.contact-button, .cv-link{
+    flex: 1;
+    height: 45px;
+    margin-top: 25px;
+    color: var(--main-color);
+    border: none;
+    border-radius: 0;
+    font-weight: 500;
+    position: relative;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+}
+.cv-button{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: var(--main-color);
+    outline: none;
+}
+
+.cv-button:hover,
+.contact-button:hover{
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 5px var(--main-color),
+                0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 200px var(--main-color);
+}
+.main-img{
+    display: grid;
+    grid-template-rows: 1fr 0.3fr ;
+    gap: 20px;
+}
+.img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.user-img{
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--text-color);
+    border-radius: 50%;
+    cursor: pointer;
+    animation: floatImage 4s ease-in-out infinite;
+
+}
+.user{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+
+}
+.app-logo{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.app-icon-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.app-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #238dde;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.fa-linkedin-in, .fa-github, .fa-instagram{
+    color: var(--bg-color);
+    font-size: 15px;
+}
+.app-icon:hover .fa-linkedin-in{
+    color: var(--text-color);
+}
+.app-icon:hover .fa-github{
+    color: var(--text-color);
+}
+.app-icon:hover .fa-instagram{
+    color: var(--text-color);
+}
+.app-icon:hover{
+    background: transparent;
+    border: 2px solid var(--main-color);
+}
+
+@media (max-width:700px) {
+    .body-container{
+        position: relative;
+        transition: 0.3s;
+        top: 0;
+    }
+    .main-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.3s;
+        gap: 10px;
+    }
+    .main-content{
+        position: absolute;
+        top: 45%;
+        left: 0;
+    }
+    .body-container{
+        height: 100%;
+    }
+    .main-img{
+        width: 100%;
+        height: 50%;
+    }
+}
+@media (max-width:450px) {
+    .main-body-container, .body-container{
+        height: 900px;
+    }
+    .main-img{
+        height: 38%;
+    }
+}
+

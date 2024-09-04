@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+:root{
+    --text-color:#fff;
+    --bg-color:#191f36;
+    --main-color:#238dde;
+}
+body{
+    background-color: var(--bg-color);
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 18px;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+}
+.logo-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+.logo-container h3{
+    font-family: "Great Vibes", cursive;
+    font-size: 32px;
+}
+.list-container{
+    height: 100%;
+    display: flex;
+}
+.list-container ul{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.list-container ul li{
+    list-style: none;
+    position: relative;
+}
+.nav-link{
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: all 0.2s;
+}
+.nav-link:hover{
+    color: var(--bg-color);
+}
+.nav-link::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: var(--bg-color);
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.nav-link:hover::after{
+    opacity: 1;
+}
+.active{
+    color: var(--bg-color);
+}
+.header-bars{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+.fa-bars{
+    color: #fff;
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    height: 500vh;
+    margin-top: 10vh;
+}
+@media only screen and (max-width:800px) {
+    .header-bars{
+        opacity: 1;
+    }
+    .list-container ul{
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+        width: 100%;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        background-color: var(--main-color);
+    }
+    .menu{
+        left: 100%;
+    }
+    .list-responsive{
+        left: 0;
+    }
+}
